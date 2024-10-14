@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/img/favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <title>Barber's Den</title>
+</head>
+<body>
+<!-- --------------------HEADER SECTION START-------------------- -->
+        
+    <nav class="header__nav">
+        <div class="nav__logo">
+            <h2>Barber's Den</h2>
+        </div>
+
+        <div class="nav__menu" id="navMenu">
+            <ul class="header__ul">
+                <li class="header__li"><a href="../html/index.html" class="header__link inicio">Inicio</a></li>
+                <li class="header__li"><a href="../php/reserva.php" class="header__link">Reservas</a></li>
+                <li class="header__li"><a href="../php/agenda.php" class="header__link">Agenda</a></li>
+                <li class="header__li"><a href="#footer" class="header__link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__button">
+            <a href="../php/login&singup.php"><button class="btn" id="loginBtn">Iniciar Sesión</button></a>
+            <a href="../php/login&singup.php"><button class="btn" id="registerBtn">Registrarse</button></a>
+        </div>
+
+        <div class="nav__menu-btn">
+            <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+<!-- --------------------HEADER SECTION END-------------------- -->
+
+<!-- --------------------SLIDER SECTION START-------------------- -->
+
+    <div class="slider__frame">
+        <ul class="slider__ul">
+            <li class="slider__li"><img src="../media/img/slider1.jpg" alt="slider1"></li>
+            <li class="slider__li"><img src="../media/img/slider2.jpg" alt="slider2"></li>
+            <li class="slider__li"><img src="../media/img/slider3.jpg" alt="slider3"></li>
+            <li class="slider__li"><img src="../media/img/slider4.jpg" alt="slider4"></li>
+        </ul>
+    </div>
+
+<!-- --------------------SLIDER SECTION END-------------------- -->
+
+<!-- --------------------MAIN SECTION START-------------------- -->
+
+    <div class="main__container" id="main">
+
+        <div class="about-us__container container4">
+            <h3>Sobre Nosotros</h3>
+            <div class="about-us">
+                <div class="about-us__img-container">
+                    <img src="../media/img/aboutus.jpg" alt="about-us-img" class="about-us__img">
+                </div>
+                <div class="about-us__p-container">
+                    <p>Nuestra pasión por el cuidado del cabello y la barbería se refleja en cada corte y estilo que ofrecemos. Nos hemos convertido en un lugar de encuentro para aquellos que buscan no solo un servicio de calidad, sino también una experiencia única. Nos enorgullece ofrecer un ambiente acogedor y amigable, donde te sientas como en casa. Creemos que cada cliente es único y merece un estilo que refleje su personalidad. Ya sea que desees un corte clásico, un afeitado impecable o un estilo moderno, estamos aquí para hacer realidad tu visión.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission__container container4">
+            <h3>Misión</h3>
+            <div class="mission">
+                <div class="mission__img-container">
+                    <img src="../media/img/mission.jpg" alt="mission-img" class="mission__img">
+                </div>
+                <div class="mission__p-container">
+                    <p>Nuestra misión es transformar la experiencia de corte de cabello y arreglo personal en un momento único y placentero para cada cliente. Nos dedicamos a ofrecer un servicio excepcional que va más allá de un simple corte: buscamos crear un ambiente donde el cliente se sienta valorado y relajado, mientras recibe atención personalizada que resalta su estilo individual. Brindar una experiencia integral, desde el momento en que reservas tu cita hasta que sales de nuestra barbería, satisfecho con el resultado.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vision__container container4">
+            <h3>Visión</h3>
+            <div class="vision">
+                <div class="vision__img-container">
+                    <img src="../media/img/vision.jpg" alt="vision-img" class="vision__img">
+                </div>
+                <div class="vision__p-container">
+                    <p>Nuestra visión es convertirnos en un referente de calidad y estilo en el mundo de la barbería, tanto a nivel local como en una escala más amplia. Queremos ser reconocidos no solo por los cortes excepcionales y el servicio personalizado, sino también por nuestra capacidad de crear una comunidad donde cada persona se sienta bienvenida, respetada y cuidada. Expandir nuestro alcance, abriendo más ubicaciones donde nuestros principios de calidad, innovación y atención al cliente puedan continuar creciendo. Visualizamos un futuro en el que nuestros espacios de barbería sean mucho más que un lugar para cortes de cabello: un entorno donde nuestros clientes encuentren un espacio de confianza, relajación y estilo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------MAIN SECTION END-------------------- -->
+
+<!-- --------------------FOOTER SECTION START-------------------- -->
+
+    <footer class="footer" id="footer">
+
+        <div class="footer__sections-container">
+            <div class="footer__left footer-sections">
+                <h3 class="footer__name">Barber's Ben</h3>
+                
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="../html/index.html">Inicio</a></li>
+                    <li class="footer__li"><a href="../php/reserva.php">Reservas</a></li>
+                    <li class="footer__li"><a href="../php/agenda.php">Agenda</a></li>
+                    <li class="footer__li"><a href="#main">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__center footer-sections">
+                <div class="footer__logo-container">
+                    <img src="../media/img/logo.jpg" alt="logo" class="footer__logo-img">
+                </div>
+            </div>
+            
+            <div class="footer__right footer-sections">
+                <div class="footer__icons-container">
+                    <div class="ig icons"><i class='bx bxl-instagram'></i></div>
+                    <div class="tt icons"><i class='bx bxl-tiktok'></i></div>
+                    <div class="lk icons"><i class='bx bxl-linkedin'></i></div>
+                    <div class="ws icons"><i class='bx bxl-whatsapp'></i></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__copy-container">
+            <p class="footer__copy">
+                Copyright &copy; 2024 <span class="footer__copy-span">Barber's Ben</span>
+            </p>
+        </div>
+    </footer>   
+
+<!-- --------------------FOOTER SECTION END-------------------- -->
+
+</body>
+<script src="../js/login&singup.js"></script>
+</html>

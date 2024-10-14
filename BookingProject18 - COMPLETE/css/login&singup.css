@@ -1,0 +1,305 @@
+*{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 1px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../media/img/slider1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #27272766;
+}
+
+/* --------------------HEADER SECTION START-------------------- */
+
+.header__nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(#27272766, transparent);
+    z-index: 100;
+}
+
+.header__ul li{
+    display: none;
+}
+
+.nav__logo h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav__menu ul{
+    display: flex;
+}
+
+.nav__menu ul li{
+    list-style-type: none;
+}
+
+.nav__menu ul li .header__link{
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.header__link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+
+.nav__button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: #ffffff66;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background: #ffffff4d
+}
+
+/* --------------------HEADER SECTION END-------------------- */
+
+/* --------------------FORM SECTION START-------------------- */
+
+#registerBtn{
+    margin-left: 15px;
+
+}
+
+.btn.white-btn{
+    background: #ffffffb3;
+}
+
+.btn.btn.white-btn:hover{
+    background: #ffffff80
+}
+
+.nav__menu-btn{
+    display: none;
+}
+
+.form__box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2; /* TOMAR EN CUENTA A LO LARGO DE LA PÁGINA */
+}
+
+.login__container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.register__container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.header__form{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.two__forms{
+    display: flex;
+    gap: 10px;
+}
+
+.input__field{
+    font-size: 15px;
+    background: #ffffff33;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.input__field:hover, .input__field:focus{
+    background: #ffffff40;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.input__box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: #ffffffb3;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+
+.submit:hover{
+    background-color: #ffffff80;
+    box-shadow: 1px 5px 7px 1px #00000033;
+}
+
+.two__col{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.two__col .one{
+    display: flex;
+    gap: 5px;
+}
+
+.two label a{
+    color: #fff;
+}
+
+.two label a:hover{
+    text-decoration: underline;
+}
+
+/* --------------------FORM SECTION END-------------------- */
+
+/* --------------------QUERY SECTION START-------------------- */
+
+@media only screen and (max-width: 795px){
+
+    .header__ul li{
+        display: block;
+    }
+
+    .nav__button{
+        display: none;
+    }
+
+    .nav__menu.responsive{
+        top: 100px;
+    }
+
+    .nav__menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: #ffffff11;
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+
+    .nav__menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav__menu-btn{
+        display: block;
+    }
+
+    .nav__menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: #ffffff33;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .nav__menu-btn i:hover{
+        background: #ffffff26;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .wrapper{
+        min-height: 100vh;
+    }
+
+    .form__box{
+        width: 100%;
+        height: 500px;
+    }
+
+    .register__container, .login__container{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .register__container .two__forms{
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
+
+/* --------------------QUERY SECTION END-------------------- */
